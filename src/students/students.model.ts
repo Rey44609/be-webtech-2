@@ -5,10 +5,10 @@ export interface Student extends RowDataPacket {
   first_name: string;
   last_name: string;
   email: string;
-  age: string;
-  course: string;
-  year_level: string;
-  gpa: string;
-  enrollment_status: 'Active' | 'Inactive';
+  age: number | null;
+  course: string | null;
+  year_level: number | null;
+  gpa: number | null;
+  enrollment_status: "Active" | "Inactive";
   created_at: string;
 }
